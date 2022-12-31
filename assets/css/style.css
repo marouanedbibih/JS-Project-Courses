@@ -1,0 +1,284 @@
+@import url(./root.css);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body-content{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    background-color: var(--second-color);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    min-height:var(--cover-height);
+    margin: 0;
+}
+/*  START NAV BAR*/
+.bg-cl{
+    background-color: var(--first-color);
+    height: var(--nav-height);
+}
+.navbar .nav-link{
+    padding: 29px;
+}
+
+.ttl-cl{
+    color: var(--second-color);
+}
+.ttl-cl:hover{
+    color: var(--first-color);
+    background-color: var(--second-color);
+    transition: 0.5s ease;
+}
+/*  END NAV BAR*/
+
+/* START PAGE LOGIN*/
+.first-container{
+    background-color: var(--first-color);
+    padding: 8px;
+    width: 400px;
+    height: fit-content;
+    border-radius: 8px;
+    box-shadow: 0px 5px 8px var(--second-color);
+}
+.form{
+    padding: 10px 20px;
+}
+.form h1{
+    font-size: 25px;
+    text-align: center;
+    color: var(--second-color);
+    margin-bottom: 20px;
+}
+.form-area{
+    margin-bottom: 10px;
+}
+.form-area label{
+    display: block;
+    color: var(--second-color);
+
+}
+.form-area input{
+    width: 100%;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: var(--first-color);
+    border-radius: 3px;
+    border-bottom: 3px solid var(--second-color);
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+.form-area input:hover{
+    background-color: var(--second-transparant-color);
+    color: black;
+
+}
+.form-area input:focus{
+    background-color: var(--second-color);
+    color: black;
+}
+.form-area small {
+    color: var(--error-color);
+}
+#btn-vl{
+    color: var(--second-color);
+    border-color: var(--fourth-color);
+}
+#btn-vl:hover{
+    background-color: var(--second-color);
+    color: var(--first-color);
+    border-color: var(--second-color);
+}
+#btn-vl:active{
+    background-color: var(--second-transparant-color);
+    color: var(--first-color);
+    border-color: var(--second-transparant-color);
+}
+
+/* -----error------ */
+.form-area.form-area.error label{
+    color: var(--error-color);
+}
+.form-area.error input{
+    border-color:var(--error-color);
+    color:var(--error-color) ;
+    background-color: var(--first-color);
+}
+.form-area.error small{
+    color: var(--error-color);
+}
+/*----success-----*/
+.form-area.form-area.success label{
+    color: var(--success-color);
+}
+.form-area.success input{
+    border-color:var(--success-color);
+    color:var(--success-color) ;
+    background-color: var(--first-color);
+}
+.form-area.success small{
+    color: var(--success-color);
+}
+.form-area i {
+    margin-left: -30px;
+    cursor: pointer;
+}
+/* END PAGE LOGIN*/
+
+/* START PAGE HOME*/
+.cover{
+    width: 100%;
+    height: var(--cover-height);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/bg-3.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.cover-area{
+    width: 80%;
+    height: 80%;
+    background-color:var(--first-transparent-color);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:var(--padding-first);
+}
+
+.cover-content{
+    padding: var(--padding-first);
+    margin: var(--margin-first);
+}
+.cover-content h1{
+    font-size: 50px;
+    width: 200;
+    color: var(--second-color);
+    text-align: center;
+}
+.cover-content p{
+    color: var(--second-color);
+}
+#btn-crs{
+    width: 40vh;
+    height: 10vh;
+    color: var(--second-color);
+    border-color: var(--second-color);
+}
+#btn-crs:hover{
+    background-color: var(--second-color);
+    color: var(--first-color);
+    border-color: var(--second-color);
+}
+#btn-crs:active{
+    background-color: var(--second-transparant-color);
+    color: var(--first-color);
+    border-color: var(--second-transparant-color);
+}
+/* END PAGE HOME*/
+
+/* START PAGE COURSES*/
+
+.courses{
+    width: 100%;
+    height: 80vh;
+    background-color: var(--first-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+
+}
+.btn-cr{
+    color: var(--first-color);
+    border-color: var(--first-color);
+}
+.btn-cr:hover{
+    background-color: var(--first-color);
+    color: var(--second-color);
+    border-color: var(--first-color);
+    transition: 0.5s ease;
+}
+.btn-cr:active{
+    background-color: var(--first-transparent-color);
+    color: var(--second-color);
+    border-color: var(--first-transparent-color);
+}
+
+.course-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+    gap: 2rem;
+    background-color: var(--second-color);
+}
+/* MENU */
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0px;
+    box-sizing: border-box;
+}
+
+
+.menu .catg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px 0px;
+    background-color: white;
+}
+.menu .catg h1{
+    padding-bottom: 10px;
+    color: var(--first-color);
+}
+.menu .catg .btn-list{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.menu .catg .btn-list .btn-filtrage{
+    height: 8vh;
+    border:none;
+    background-color: white;
+    color: var(--first-color);
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+}
+.menu .catg .btn-list .btn-filtrage:hover{
+    height: 8vh;
+    border:none;
+    background-color: var(--first-color);
+    color: var(--second-color);
+    transition: 0.5s ease;
+}
+.menu .prix{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.menu .prix h3{
+    text-align: center;
+    padding-bottom: 10px;
+    color: var(--first-color);
+}
+.menu .prix input[type=range]{
+
+    width: 80%;
+}
+.input-search{
+    box-shadow: var(--first-color);
+}
+/* END PAGE COURSES*/
