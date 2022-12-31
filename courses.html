@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/root.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Courses</title>
+</head>
+
+<body>
+  <nav class=" navbar navbar-expand-md bg-cl">
+    <div class=" container">
+      <a class="navbar-brand ttl-cl" href="#">EMSI</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+          <a class=" nav-link ttl-cl" aria-current="page" href="./index.html">Home</a>
+          <a class=" nav-link ttl-cl" href="./courses.html">Courses</a>
+          <a class="nav-link ttl-cl" href="./login.html">Login</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="content-parent d-flex">
+    <div class="menu col-3">
+      <form class="form-inline search">
+        <input class="form-control mr-sm-2 m-1 " type="search" placeholder="Search" aria-label="Search" id="searchInput">
+      </form>
+      <div class="catg">
+        <h1>Categories</h1>
+        <div class="btn-list">
+          <button type="button" class=" btn-filtrage" data-id="all">ALL</button>
+          <button type="button" class=" btn-filtrage" data-id="js">JS</button>
+          <button type="button" class=" btn-filtrage" data-="css">CSS</button>
+          <button type="button" class=" btn-filtrage" data-id="html">HTML</button>
+          <button type="button" class=" btn-filtrage" data-id="react">REACT</button>
+        </div>
+      </div>
+      <div class="prix">
+        <h3>Price</h3>
+        <input type="range" name="rabge-price" id="range-price" min="0" max="200" step="5" value="50"><br>
+        <small id="small-price">50$</small>
+        <p></p>
+      </div>
+
+    </div>
+
+    <div class="course-content col-9 bg-light">
+      <div class="card m-3" style="width: 18rem;">
+        <img src="./assets/img/boostrap-1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <h5 class="card-title">Card title</h5>
+        </div>
+      </div>
+      <div class="card m-3 " style="width: 18rem;">
+        <img src="./assets/img/boostrap-1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <h5 class="card-title">Card title</h5>
+        </div>
+      </div>
+      <div class="card m-3" style="width: 18rem;">
+        <img src="./assets/img/boostrap-1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <h5 class="card-title">Card title</h5>
+        </div>
+      </div>
+      <div class="card m-3" style="width: 18rem;">
+        <img src="./assets/img/boostrap-1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <h5 class="card-title">Card title</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/database.js" type="module"></script>
+  <script src="./assets/js/courses.js" type="module"></script>
+
+</body>
+
+</html>

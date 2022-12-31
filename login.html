@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="./assets/css/root.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Login</title>
+</head>
+<body>
+    <nav class=" navbar navbar-expand-md bg-cl">
+        <div class=" container">
+          <a class="navbar-brand ttl-cl" href="#">EMSI</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="emsi-nav nav-link ttl-cl" aria-current="page" href="./index.html">Home</a>
+              <a class="emsi-nav nav-link ttl-cl" href="./courses.html">Courses</a>
+              
+              <a class="emsi-nav nav-link ttl-cl" href="./login.html">Login</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="body-content">
+      <div class="first-container">
+        <form class="form" id="sing-up">
+            <h1>Sing up</h1>
+            <div class="form-area">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" class="input-error">
+                <small></small>
+            </div>
+            <div class="form-area">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email">
+                <small></small>
+            </div>
+            <div class="form-area">
+                <label for="password">Password</label>
+                <input type="password" name="Password" id="password">
+                <i class="bi bi-eye-slash togglePassword" id="togglePassword"></i>
+                <small ></small>
+            </div>
+            <div class="form-area ">
+                <label for="confirme">Confirme</label>
+                <input type="password" name="confirme" id="confirme">
+                <small></small>
+            </div>
+            <div class="form-area">
+                <button type="submit" class="btn btn-outline-primary " id="btn-vl" >Sing up</button>
+            </div>
+        </form>
+      </div>
+    </div>
+
+
+ 
+
+    
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/database.js"></script>
+    <script src="./assets/js/login.js" type="module"></script>
+</body>
+</html>
